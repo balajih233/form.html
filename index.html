@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outline">
+        <h1>Option Form</h1>
+        <form>
+            <div class="inside">
+                <label for="fname" class="name">First Name:</label>
+                <input type="text" name="fname" required placeholder="Ram">
+                
+                <label for="lname" class="name">Last Name:</label>
+                <input type="text" name="lname" required placeholder="Surname">
+                
+                <div class="gender-section">
+                    <label for="gender" class="name">Gender:</label>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </div>
+                
+                <div class="email-group"> 
+                    <label for="email" class="name">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                </div>
+                
+                <label for="password" class="name">Password:</label>
+                <input type="password" name="password" required>
+                
+                <label for="options" class="name">Branch:</label>
+                <select id="options" name="options">
+                    <option value="option1">Electronics and Communication Engineering (ECE)</option>
+                    <option value="option2">Computer Science and Engineering (CSE)</option>
+                    <option value="option3">Artificial Intelligence and Data Science (AI&DS)</option>
+                    <option value="option4">Mechanical Engineering (ME)</option>
+                    <option value="option5">Others</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
